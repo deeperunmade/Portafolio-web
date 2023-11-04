@@ -10,7 +10,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "delete:docs": "del docs",
-    "copy:dist": "copyfiles dist/portafolio-web/* ./docs -f"
+    "copy:dist": "xcopy C:\\Users\\Moshitos\\Desktop\\Moshito\\Angular\\Portafolio-Web\\dist\\portafolio-web C:\\Users\\Moshitos\\Desktop\\Moshito\\Angular\\Portafolio-Web\\docs /E"
   },
   "private": true,
   "dependencies": {
