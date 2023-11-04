@@ -1,1 +1,44 @@
-<p>contacto works!</p>
+<section>
+  <div class="row justify-content-center text-start" style="color: white;">
+    <div class="col-md-6" style="background-color:#0c3f6a;border-radius:15px;border:solid black;">
+      <form name="Portafolio" netlify method="post" autocomplete="off">
+        <h1 class="text-center mb-4">Contactame</h1>
+        <fieldset>
+          <div class="form-group mb-3">
+            <div class="col-md-12">
+              <label class="form-label">Nombre</label>
+              <input id="nombre" name="nombre" type="text" class="form-control">
+            </div>
+          </div>
+          <div class="form-group mb-3">
+            <div class="col-md-12">
+              <label class="form-label">Correo electronico</label>
+              <input id="email" name="email" type="email" placeholder="name@example.com" class="form-control">
+            </div>
+          </div>
+
+          <div class="form-group mb-3">
+            <div class="col-md-12">
+              <label class="form-label">Telefono</label>
+              <input id="telefono" name="telefono" type="tel" class="form-control">
+            </div>
+          </div>
+
+          <div class="form-group mb-3">
+            <div class="col-md-12">
+              <label class="form-label">Mensaje</label>
+              <textarea class="form-control" id="mensaje" name="mensaje" placeholder="Escriba su mensaje..."
+                rows="7"></textarea>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-md-6 offset-5 ">
+              <button id="enviar" type="submit" class="btn btn-primary btn-lg mb-3">Enviar</button>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+</section>

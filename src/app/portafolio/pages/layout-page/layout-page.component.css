@@ -1,0 +1,63 @@
+.navbar-nav li a {
+  display: inline-block;
+  position: relative;
+  color: #1e1e1f;
+}
+
+.navbar-nav li a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #8EDCE6;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.navbar-nav li a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.nav-link:focus,
+.nav-link:hover {
+  color: white;
+}
+
+.dropdown button {
+  color: #1e1e1f;
+}
+
+.card:hover {
+  box-shadow: 5px 5px 20px #263D92;
+  transform: translateY(-3%);
+}
+
+nav .navbar-brand {
+  font-size: 30px;
+}
+
+@media (max-width: 600px) {
+  nav .navbar-brand {
+    font-size: 20px;
+  }
+
+  .navbar-nav li a {
+    display: inline-block;
+    position: relative;
+    color: white;
+  }
+
+  .dropdown button {
+    color: white;
+  }
+
+}
+
+.quien_soy {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}

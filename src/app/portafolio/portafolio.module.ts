@@ -6,6 +6,7 @@ import { LayoutPageComponent } from './pages/layout-page/layout-page.component';
 import { SobreMiComponent } from './pages/sobre-mi/sobre-mi.component';
 import { ProyectosComponent } from './pages/proyectos/proyectos.component';
 import { ContactoComponent } from './pages/contacto/contacto.component';
+import { MaterialModule } from '../material/material.module';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { ContactoComponent } from './pages/contacto/contacto.component';
   ],
   imports: [
     CommonModule,
-    PortafolioRoutingModule
+    PortafolioRoutingModule,
+    MaterialModule
   ]
 })
 export class PortafolioModule { }

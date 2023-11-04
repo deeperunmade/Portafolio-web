@@ -1,4 +1,102 @@
-<h1>Luis Angel de la Torre Sánchez</h1>
+<nav class="navbar navbar-expand-md navbar-dark" style="background-color: #036a93;">
 
-<router-outlet></router-outlet>
+  <div class="container">
 
+    <div class="row">
+
+      <div class="col">
+        <a class="navbar-brand">Luis Angel De La Torre Sánchez</a>
+      </div>
+
+    </div>
+
+    <button class="navbar-toggler nav-mobile" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu">
+
+      <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+
+        <li routerLink="sobre-mi" class="nav-item">
+          <a data-mdb-toggle="collapse" class="btn nav-link" data-scroll>
+            Sobre mi
+          </a>
+        </li>
+
+        <li routerLink="proyectos" class="nav-item">
+          <a data-mdb-toggle="collapse" class="btn nav-link" data-scroll>
+            Proyectos
+          </a>
+        </li>
+
+        <li routerLink="contacto" class="nav-item">
+          <a data-mdb-toggle="collapse" class="btn nav-link" data-scroll>
+            Contacto
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" data-scroll href="assets/curriculum/currículum.pdf" target="_blank">
+            Curriculum
+          </a>
+        </li>
+
+      </ul>
+
+      <div class="dropdown">
+
+        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" style="background-color: #31a8ae;">
+          Redes Sociales
+        </button>
+
+        <ul class="dropdown-menu">
+
+          <li>
+            <a class="dropdown-item bi bi-whatsapp" target="_blank"
+              href="https://wa.me/3335055722/?text=Interesad@%20en%20tus%20servicios">
+              Whatsapp
+            </a>
+          </li>
+
+          <li>
+            <a class="dropdown-item bi bi-linkedin" target="_blank"
+              href="https://www.linkedin.com/in/Angel-de-la-Torre">
+              Linkedin
+            </a>
+          </li>
+
+          <li>
+            <a class="dropdown-item bi bi-github" target="_blank" href="https://github.com/deeperunmade">
+              Github
+            </a>
+          </li>
+
+          <li>
+            <a class="dropdown-item bi bi-envelope-at-fill"
+              href="mailto:darkknightandroid@gmail.com?Subject=Interesad@%20en%20tus%20servicios">
+              Gmail
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</nav>
+
+<div class="container-fluid mt-3">
+
+  <div class="row">
+
+    <div class="col text-center">
+      <router-outlet></router-outlet>
+    </div>
+
+  </div>
+
+</div>

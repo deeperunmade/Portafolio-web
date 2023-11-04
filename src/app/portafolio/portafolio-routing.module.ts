@@ -12,7 +12,7 @@ const routes: Routes = [{
     {path: 'sobre-mi', component: SobreMiComponent},
     {path: 'proyectos', component: ProyectosComponent},
     {path: 'contacto', component: ContactoComponent},
-    {path: '**', redirectTo: 'sobre-mi'},
+    {path: '**', redirectTo: 'sobre-mi'}
   ]
 }];
 
