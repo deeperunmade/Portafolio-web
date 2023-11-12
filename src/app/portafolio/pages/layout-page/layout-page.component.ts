@@ -1,3 +1,4 @@
+import { InfoPageService } from './../../../services/info-page.service';
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['layout-page.component.css']
 })
 export class LayoutPageComponent {
+
+  constructor(public _servicio:InfoPageService){}
 
 }
