@@ -17,23 +17,19 @@
   transition: transform 0.25s ease-out;
 }
 
-.navbar-nav li a:hover::after {
+.navbar-nav li a:hover::after
+ {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
 
-.nav-link:focus,
-.nav-link:hover {
+.navbar-nav li a:focus,
+.navbar-nav li a:hover {
   color: white;
 }
 
 .dropdown button {
   color: #1e1e1f;
-}
-
-.card:hover {
-  box-shadow: 5px 5px 20px #263D92;
-  transform: translateY(-3%);
 }
 
 nav .navbar-brand {
@@ -55,9 +51,4 @@ nav .navbar-brand {
     color: white;
   }
 
-}
-
-.quien_soy {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 18px;
 }
