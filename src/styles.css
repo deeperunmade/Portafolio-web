@@ -2,3 +2,31 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+/* loading animation */
+svg path,
+svg rect{
+  fill: black;
+}
+
+.homeBackground{
+  background-color: #122535
+  ;
+}
+
+.sobreMiBackground{
+background-color: rgb(126, 175, 206);
+}
+
+.navBackground{
+background-color: #4c6680
+;
+}
+
+.btnSocial{
+  background-color: #abc5d4;
+}
+
+.proyectBackground{
+background-color: rgb(122, 161, 185);
+}

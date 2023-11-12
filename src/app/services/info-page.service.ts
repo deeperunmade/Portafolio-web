@@ -8,29 +8,28 @@ import { InfoPage } from '../interface/info-page.interface';
 export class InfoPageService {
 
   info:InfoPage = {};
-  cargada = false;
+  cargando = true;
 
   equipo: any[] = [];
 
   constructor( private http:HttpClient) {
     this.cargarInfo();
-    this.cargarEquipo();
-
-
+    this.cargarProyectos();
    }
 
    private cargarInfo() {
     this.http.get('assets/data/data-page.json')
     .subscribe((resp:InfoPage) => {
-      this.cargada = true;
       this.info = resp;
     });
    }
 
-   private cargarEquipo(){
+   private cargarProyectos(){
     this.http.get('https://portafolio-web-39ce8-default-rtdb.firebaseio.com/proyectos.json')
     .subscribe((resp: any) => {
       this.equipo = resp;
+        this.cargando = false;
+      
     });
    }
 }
