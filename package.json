@@ -5,9 +5,12 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:href": "ng build --base-href ./",
+    "build:github": "npm run delete:docs && npm run build:href && npm run copy:dist",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "deploy": "ng deploy --base-href=https://github.com/deeperunmade/Portafolio-web"
+    "delete:docs": "del docs",
+    "copy:dist": "xcopy C:\\Users\\Moshitos\\Desktop\\Moshito\\Angular\\Portafolio-Web\\dist\\portafolio-web C:\\Users\\Moshitos\\Desktop\\Moshito\\Angular\\Portafolio-Web\\docs /E"
   },
   "private": true,
   "dependencies": {
