@@ -27,7 +27,7 @@
 
     <div *ngIf="!_servicio.cargando" class="row">
 
-      <div *ngFor="let proyecto of _servicio.equipo" class="col-md-4 mx-2 col-sm-6 card animate__animated animate__fadeIn">
+      <div *ngFor="let proyecto of _servicio.equipo" class="col-md-4 col-sm-6 card animate__animated animate__fadeIn mb-3">
         <img class="card-img-top" [src]="proyecto.url">
         <div class="card-body">
           <h5 class="card-title">{{proyecto.nombre}}</h5>
