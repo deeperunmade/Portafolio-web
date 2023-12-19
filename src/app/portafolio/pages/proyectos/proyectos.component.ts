@@ -6,15 +6,17 @@ import { InfoPageService } from 'src/app/services/info-page.service';
   templateUrl: './proyectos.component.html',
   styles: [`
 
-  .card:hover {
-  box-shadow: 20px 20px 80px #263D92;
-  transform: translateY(-3%);
+  .card{
+    transition: .5s linear;
   }
-  .card-img-top {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+
+  @media (min-width: 768px){
+    .card:hover {
+    scale: 1.2;
+    z-index:1;
+    }
+  }
+
 
   `
   ]

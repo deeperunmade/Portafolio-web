@@ -1,72 +1,205 @@
-.skills a{
-  padding: 0 30px;
-  border-radius: 50%;
+.skills a {
   background-color: #333;
   color: #fff;
-  line-height: 60px;
   font-size: 40px;
   box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.2);
-  transition: .2s;
+  border-radius: 5px;
+
 }
 
-.skills:hover a{
+.skills i {
+  width: 100%;
+}
+
+.js{
+  animation: js 1s linear both;
+  i{
+    animation: i .5s linear backwards;
+  }
+}
+
+.react {
+  animation: react 1s linear both;
+  animation-delay: 1s;
+  i{
+    animation: i .5s linear backwards;
+    animation-delay: 1s;
+  }
+}
+.node {
+  animation: node 1s linear both;
+  animation-delay: 2s;
+  i{
+    animation: i .5s linear backwards;
+    animation-delay: 2s;
+  }
+}
+.html {
+  animation: html 1s linear both;
+  animation-delay: 3s;
+  i{
+    animation: i .5s linear backwards;
+    animation-delay: 3s;
+  }
+}
+.git {
+  animation: git 1s linear both;
+  animation-delay: 4s;
+  i{
+    animation: i .5s linear backwards;
+    animation-delay: 4s;
+  }
+}
+
+.angular {
+  animation: angular 1s linear both;
+  animation-delay: 5s;
+  i{
+    animation: i .5s linear backwards;
+    animation-delay: 5s;
+  }
+}
+
+.css {
+  animation: css 1s linear both;
+  animation-delay: 6s;
+  i{
+    animation: i .5s linear backwards;
+    animation-delay: 6s;
+  }
+}
+.bootstrap {
+  animation: bootstrap 1s linear both;
+  animation-delay: 6s;
+  i{
+    animation: i .5s linear backwards;
+    animation-delay: 6s;
+  }
+}
+.database {
+  animation: database 1s linear both;
+  animation-delay: 6s;
+  i{
+    animation: i .5s linear backwards;
+    animation-delay: 6s;
+  }
+}
+
+@keyframes i {
+  from{
+    scale: 0;
+   }
+   to{
+    scale: 1.5;
+   }
+}
+
+@keyframes js {
+ from{
   filter: blur(2px);
-}
-
-.skills div a:hover{
-  transform: translateY(-3px) scale(1.05);
+  scale: 0;
+ }
+ to{
   box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.4);
   filter: none;
+  scale: 1.5;
+  background-color: #f7df1e;
+ }
+}
+@keyframes react {
+ from{
+  filter: blur(2px);
+  scale: 0;
+ }
+ to{
+  box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.4);
+  filter: none;
+  scale: 1.5;
+  background-color: #1a9fcb;
+ }
+}
+@keyframes node {
+ from{
+  filter: blur(2px);
+  scale: 0;
+ }
+ to{
+  box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.4);
+  filter: none;
+  scale: 1.5;
+  background-color: #8bc500;
+ }
+}
+@keyframes html {
+ from{
+  filter: blur(2px);
+  scale: 0;
+ }
+ to{
+  box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.4);
+  filter: none;
+  scale: 1.5;
+  background-color: #e44c26;
+ }
+}
+@keyframes git {
+ from{
+  filter: blur(2px);
+  scale: 0;
+ }
+ to{
+  box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.4);
+  filter: none;
+  scale: 1.5;
+  background-color: black;
+ }
+}
+@keyframes angular {
+ from{
+  filter: blur(2px);
+  scale: 0;
+ }
+ to{
+  box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.4);
+  filter: none;
+  scale: 1.5;
+  background-color: #c50730;
+ }
+}
+@keyframes css {
+ from{
+  filter: blur(2px);
+  scale: 0;
+ }
+ to{
+  box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.4);
+  filter: none;
+  scale: 1.5;
+  background-color: #264de4;
+ }
+}
+@keyframes bootstrap {
+ from{
+  filter: blur(2px);
+  scale: 0;
+ }
+ to{
+  box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.4);
+  filter: none;
+  scale: 1.5;
+  background-color: #7e13f9;
+ }
+}
+@keyframes database {
+ from{
+  filter: blur(2px);
+  scale: 0;
+ }
+ to{
+  box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.4);
+  filter: none;
+  scale: 1.5;
+  background-color: black;
+ }
 }
 
-.skills .css:hover{
-  background-color:#2394f3 ;
-}
-.skills .html:hover{
-  background-color:#fb5524 ;
-}
-.skills .sass:hover{
-  background-color:#cb649b ;
-}
-.skills .php:hover{
-  background-color:#737ab1 ;
-}
-.skills .js:hover{
-  background-color:#fbdc04 ;
-}
-.skills .python:hover{
-  background-color:#3b73aa ;
-}
-.skills .bootstrap:hover{
-  background-color:#7c13f6 ;
-}
-@media (max-width: 400px) {
-  .skills a{
-    padding: 0 30px;
-    border-radius: 50%;
-    background-color: #333;
-    color: #fff;
-    line-height: 60px;
-    font-size: 30px;
-    box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.2);
-    transition: .2s;
-  }
-  /* .skills .css{
-    background-color:#2394f3 ;
-  }
-  .skills .html{
-    background-color:#fb5524 ;
-  }
-  .skills .sass{
-    background-color:#cb649b ;
-  }
-  .skills .php{
-    background-color:#737ab1 ;
-  }
-  .skills .js{
-    background-color:#fbdc04 ;
-  }
-  .skills .python{
-    background-color:#3b73aa ;
-  } */
-}
